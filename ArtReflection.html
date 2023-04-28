@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS & JS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="120">
+    <meta name="author" content="Kyle Abrahams">
+    <meta name="description" content="Home Page">
+	<title>Art Reflection </title>
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="Blogstyling.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!---header--->
+	<header>
+	
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="design.html">Design Section</a></li>
+			<li><a href="blogSection.html">Blog Section</a></li>
+            <li><a href="WebCam2.html">Net-Art Protype</a></li>
+        
+			
+		</ul>
+	</header>
+
+	<!---home--->
+	
+	</head>
+
+    <body>
+    
+  
+          
+     
+         
+            <section class="section-title about-title">
+  
+            <h1>
+           Reflection Of Internet Art
+            </h1>
+            
+            
+           
+         
+           
+          <article class="about-info">
+            
+            <main>
+  
+        
+    <p>
+                 In preparation for this assignment, one of the first things I wish I did was actually find a site that more or less featured the same aesthetic, and conceptually illustrated what I was investigating. That is how big tech companies and by extension, the internet as a whole has eroded personal privacy. The way I went about conveying this idea was to have an eyes motif, to literally communicate that “Big Brother is always watching”.
+            <br>The second way I wanted to communicate this is by use of the site accessing the user’s webcam and displaying the user’s face in real-time. In a way I wanted this to be a creepy nod that, you are always being watched while on the internet, which although fairly common knowledge, I wanted to take it a step further and show the user that just as they can see their face so can the billion other people who access the internet, because it’s that easy to breach privacy within the digital sphere. </br>
+            <br> But I am getting ahead of myself. Given that I wasn’t able to find the inspiration I needed it was difficult to just position my work in and around something so instead I decided rather think more laterally so to speak, and for that I started thinking more about what exactly I was trying to address, that being, surveillance. </br>
+            <br> So with that mind, I thought back to the most famous warning about mass surveillance, George Orwell’s 1984. My line of thinking was along the sentiment that big brother is always watching, and initially, I wanted to have the site be almost like a virtual companion that mimics the user’s interactions.</br>
+            <br> This premise began to change radically after the realisation of just how difficult a system that would be to implement. Instead, I liked the idea of mass surveillance and wanted to keep the theme of encroachment of privacy, plan b. I then started thinking  about the ways a website could convey a sense of crossing boundaries and almost coming off as voyeuristic. And what internet gimmick emulates that feeling better than cookies? </br>
+            <br> With that in mind, the focus then shifted to cookies and I looked at Michael Parkin’s website in particular for inspiration. However, I felt like the idea of surveillance could be pushed even further than just cookies, and so I thought about motifs that surround surveillance and the since big brother is always watching, I saw an opportunity to use eyes as a visual motif on my website. So essentially, the initially internet art would have been a mock-up login page, followed by a identification document that the user would fill in, but across each page would be eyes that would follow the cursor. </br>
+            <br> I got heavy inspiration for the eyes following the cursor from a website I frequent named, Creative Bloq, which also features eyes except the pupils move as one reads further in an article on their website. </br>
+            
+            <br> Finally, the last piece of the puzzle and arguably the most crucial part of this artpiece came from the integration of the webcam. So how I came to use the webcam was after watching a documentary about how cyber-criminals use a victim’s webcam by remotely access it and threatening them with ransomware. </br>
+            
+            <br> Now I don’t think I want to be threatening anyone with ransomware or the likes, rather I was intrigued by the webcam and just how jarring it is seeing your face on a screen, especially when you didn’t overtly consent to it or had the expectation. </br>
+            
+    </p>
+
+</main>
+<h2><a href="Blog(What isDV).html" class="bluebtn">RETURN </a></h2>
+
+<h3><a href="Blog(Exampost).html" class="redbtn">NEXT</a> </h3>
+
+
+</p>
+</section>
+
+</main>
+
+
+
+
+
+</body>
+</section>
+
+<section>
+    <div class="eyes">
+        <div class="eye">
+          <div class="ball"></div>
+        </div>
+    
+        <div class="eye">
+          <div class="ball"></div>
+        </div>
+        
+        
+    
+    
+    <script>
+      var balls = document.getElementsByClassName("ball");
+      document.onmousemove = function(){
+        var x = event.clientX * 120 / window.innerWidth + "%";
+        var y = event.clientY * 120 / window.innerHeight + "%";
+       
+    
+        for(var i=0;i<2;i++){
+          balls[i].style.left = x;
+          balls[i].style.top = y;
+          balls[i].style.transform = "translate(-"+x+",-"+y+")";
+        }
+      }
+    </script>
+</section>
+
+
+<div class="last-text">
+<p>Kyle Abrahams, Made with love © 2022</p>
+</div>
+
+<!---scroll-top--->
+<a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!---custom js link--->
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

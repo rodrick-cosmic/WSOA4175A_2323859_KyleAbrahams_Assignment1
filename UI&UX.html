@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS & JS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="120">
+    <meta name="author" content="Kyle Abrahams">
+    <meta name="description" content="Home Page">
+	<title>ENTER THE MATRIX (blogpage-Reflec on DA) </title>
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="Blogstyling.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!---header--->
+	<header>
+	
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="design.html">Design Section</a></li>
+			<li><a href="blogSection.html">Blog Section</a></li>
+            <li><a href="WebCam2.html">Net-Art Protype</a></li>
+        
+			
+		</ul>
+	</header>
+
+	<!---home--->
+	
+	</head>
+
+    <body>
+    
+  
+          
+     
+         
+            <section class="section-title about-title">
+  
+            <h1>
+           UI & UX Reflection
+            </h1>
+            
+            
+           
+         
+           
+          <article class="about-info">
+            
+            <main>
+  
+        
+    <p>
+        <br> As per usual, the UI &UX section is always the most important, not only because it is what you want the audience to see and feel but also because most users will never get a chance to look at the inner workings of how certain elements are working on the page, and instead only care that they are working.</br>
+        <br> Arguably, this is the one section I felt I placed the most emphasis in, because given how much of the visual my art piece relies on, I felt it necessary to set the atmosphere and also tonally ground it. For this, I used a wide variety of sources.</br>
+        <br> Namely, this time around unlike in the past where I was building a website with an already established theme, here I had to come up with the theme and as a result that meant I needed to settle on a particular aesthetic. So for the very first iteration, my website looked more like an old chatroom, something reminiscent of YahooChat, and had the webcam functionality. The main issue with this is that it didn’t quite feel like the site was invading your privacy. My thinking then shifted to consumerism and nudge culture, where big corporations play on human instincts to get us to buy more. Only this time I wanted to see if I could use that philosophy in getting a user to allow their privacy to be invaded.</br>
+        <br> To do this I looked into color theory and its relation to emotional responses, and what I found was Khaki, in particular, was said to illicit a safe, trustworthy and down-to-earth feeling. Which is in direct contrast to what the site actually is. So without sounding too smart, the idea was to have the color create a distinct unassuming feeling while the text and visual motifs (eyes) create the opposite of that, which results in some good ol’ contrast. .</br>
+        <br> Upon first viewing the site almost resembles a modern consumer-heavy site, and I wanted to use the website’s colours to facilitate this feeling of a familiar consumer-centric space. I wanted to base the UI around sites like IKEA and combine that with the simplicity of a corporate website. .</br>
+        
+        
+    </p>
+
+</main>
+<h2><a href="devBlog2.html" class="bluebtn">RETURN </a></h2>
+
+<h3><a href="designRationale.html" class="redbtn">NEXT</a> </h3>
+
+
+</p>
+</section>
+
+</main>
+
+
+
+
+
+</body>
+</section>
+
+<section>
+    <div class="eyes">
+        <div class="eye">
+          <div class="ball"></div>
+        </div>
+    
+        <div class="eye">
+          <div class="ball"></div>
+        </div>
+        
+        
+    
+    
+    <script>
+      var balls = document.getElementsByClassName("ball");
+      document.onmousemove = function(){
+        var x = event.clientX * 120 / window.innerWidth + "%";
+        var y = event.clientY * 120 / window.innerHeight + "%";
+       
+    
+        for(var i=0;i<2;i++){
+          balls[i].style.left = x;
+          balls[i].style.top = y;
+          balls[i].style.transform = "translate(-"+x+",-"+y+")";
+        }
+      }
+    </script>
+</section>
+
+
+<div class="last-text">
+<p>Kyle Abrahams, Made with love © 2022</p>
+</div>
+
+<!---scroll-top--->
+<a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!---custom js link--->
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

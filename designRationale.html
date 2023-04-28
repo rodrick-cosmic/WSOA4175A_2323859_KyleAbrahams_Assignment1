@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS & JS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="120">
+    <meta name="author" content="Kyle Abrahams">
+    <meta name="description" content="Home Page">
+	<title>Design Rationale</title>
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="Blogstyling.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<!---header--->
+	<header>
+	
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="design.html">Design Section</a></li>
+			<li><a href="blogSection.html">Blog Section</a></li>
+            <li><a href="WebCam2.html">Net-Art Protype</a></li>
+        
+			
+		</ul>
+	</header>
+
+	<!---home--->
+	
+	</head>
+
+    <body>
+    
+  
+          
+     
+         
+            <section class="section-title about-title">
+  
+            <h1>
+           Design Rationale
+            </h1>
+            
+            
+           
+         
+           
+          <article class="about-info">
+            
+            <main>
+  
+        
+    <p>
+        <br> A design rationale is a document that details the justification for your design choices and how they relate to the objectives of the project, user demands, and industry best practices. It can assist you in outlining your goals, defending your decisions, and convincing your customer to accept your suggestion.</br>
+        <br> With that in mind, I will be explaining my DR using three basic steps: defining the problem, presenting a solution, and explaining the rationale.. </br>
+        <br> Defining the problem. The problem, so to speak, that my design is attempting to address is essentially successfully emulating a surveillance/ voyeuristic website, along the lines of a virtual chatroom. The project brief, the goals, and the restrictions focus on me successfully creating an internet art piece that explores the element of interactivity and the internet as a medium. </br>
+        <br>The following stage needs to convey my design solution and it must effectively and compellingly demonstrate how my design satisfies the project's aims. To this end, I have tried my best to structure my website with a fairly modern corporate interface and aesthetic, and this is further reinforced by the colors and font used. </br>
+        <br> Lastly, to explain the design rationale, as said before the site takes inspiration from sites like Omegle and old-school chat rooms. Additionally, the site’s aesthetic revolves around the idea of internet surveillance and invasion of privacy to faithfully emulate this, I designed the site to be almost ‘alive’ in the sense that it addresses the user and makes it seem like the user is being coerced into giving up personal information.</br>
+        
+        
+    </p>
+
+</main>
+<h2><a href="UI&UX.html" class="bluebtn">RETURN </a></h2>
+
+
+
+</p>
+</section>
+
+</main>
+
+
+
+
+
+</body>
+</section>
+
+<section>
+    <div class="eyes">
+        <div class="eye">
+          <div class="ball"></div>
+        </div>
+    
+        <div class="eye">
+          <div class="ball"></div>
+        </div>
+        
+        
+    
+    
+    <script>
+      var balls = document.getElementsByClassName("ball");
+      document.onmousemove = function(){
+        var x = event.clientX * 120 / window.innerWidth + "%";
+        var y = event.clientY * 120 / window.innerHeight + "%";
+       
+    
+        for(var i=0;i<2;i++){
+          balls[i].style.left = x;
+          balls[i].style.top = y;
+          balls[i].style.transform = "translate(-"+x+",-"+y+")";
+        }
+      }
+    </script>
+</section>
+
+
+<div class="last-text">
+<p>Kyle Abrahams, Made with love © 2022</p>
+</div>
+
+<!---scroll-top--->
+<a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!---custom js link--->
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

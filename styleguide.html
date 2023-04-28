@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS & JS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="120">
+        <meta name="author" content="Kyle Abrahams">
+        <meta name="description" content="Home Page">
+      <title>iamwatchingu </title>
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+    
+      <!---header--->
+      <header>
+       
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogSection.html">Blog Section</a></li>
+          <li><a href="design.html">Design Section</a></li>
+          <li><a href="WebCam2.html">Net-Art Protype</a></li>
+        
+        </ul>
+      </header>
+  
+<section>
+        <div class="eyes">
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
+        
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
+            
+            
+        
+        
+        <script>
+          var balls = document.getElementsByClassName("ball");
+          document.onmousemove = function(){
+            var x = event.clientX * 120 / window.innerWidth + "%";
+            var y = event.clientY * 120 / window.innerHeight + "%";
+           
+        
+            for(var i=0;i<2;i++){
+              balls[i].style.left = x;
+              balls[i].style.top = y;
+              balls[i].style.transform = "translate(-"+x+",-"+y+")";
+            }
+          }
+        </script>
+    </section>
+
+
+
+
+   
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="palette.jpg">
+    </div>
+
+    <div class="about-text">
+        <h2>Color motivation</h2>
+        <p>For the color choice, I decided on opting for more earthy tones which create a sense of neutrality and are also not too colorful it feels like a sensory overload. I decided to focus on this particular color palette as it is the most focused and harmonious in terms of the aesthetic I wanted. </p>
+        <p></p>
+        
+        
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="webs.jpg">
+    </div>
+
+    <div class="about-text">
+        <h2>UI & UX?</h2>
+        <p>In terms of UI & UX I wanted to design the site to be as simple and familar as possible so that whilst using it there is that sense of simplicity masking the ugly truth, so to speak.</p>
+        
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="Cambria-Font-2.jpg">
+    </div>
+
+    <div class="about-text">
+        <h2>Typography</h2>
+        <p>I settled on Cambria as the site's font as I believe it best encapsulated that eerie corporate feeling. I think the font was also one of the more difficult design aspects to take into consideration as there is such an abundance of fonts available, and each conveys a unique feeling.</p>
+        
+    </div>
+</section>
+
+<footer class="last-text">
+    <p>Kyle Abrahams, Made with love © 2023</p>
+  </footer>
+  
+</script>
+
+<script type="text/javascript" src="scroll.js">
+
+</script>
+
+</body>
+</html>
+  

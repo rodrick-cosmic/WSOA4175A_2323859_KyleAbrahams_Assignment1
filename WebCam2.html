@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam </title>
+
+    <link rel="stylesheet" type="text/css" href="webcam.css">
+
+</head>
+
+<body>
+    <header>
+       
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="design.html">Design Section</a></li>
+          <li><a href="blogSection.html">Blog Section</a></li>
+          
+        
+        </ul>
+      </header>
+
+
+    <div id="container">
+        <video autoplay = "true" id="videoElement">
+
+        </video>
+    </div>
+
+    <section class="home" id="home">
+        <div class="home-text">
+          
+          <h1>Smile.<br></h1>
+
+          <br></br>
+
+        <h2>It's so nice to finally meet you friend. I've learnt so much about you in this short time. You'd be surprised just how much you can learn from looking at someone.
+        </h2>
+
+      
+          
+
+
+    <script>
+        let video= document.querySelector("#videoElement");
+
+        if (navigator.mediaDevices.getUserMedia){
+            navigator.mediaDevices.getUserMedia({video:true})
+            .then(function(stream) {
+            video.srcObject = stream;
+                })
+                .catch(function (error) {
+                    console.log("Something went wrong!");
+                })
+        } else {
+                console.log("getUserMedia not supported!")
+            }
+      
+    
+    alert ("Let's see those pearly whites. Friend.");
+    </script>
+
+</head>
+
+
+
+</body>
+
+<script type="text/javascript" src="scroll.js">
+
+</script>
+
+
+</html>
